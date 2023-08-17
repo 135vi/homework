@@ -1,0 +1,35 @@
+.fixed-container {
+    width: 900px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+}
+.row-column {
+    flex-direction:column;
+    justify-content: space-around;
+}
+.banner {
+    padding: 10px;
+}
+.main-title {
+    text-align: center;
+}
+
+.row-menu {
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 20px 10px;
+}
+
+.logo {
+    margin: 0;
+    padding: 0;
+}
+.main-menu a {
+    padding: 0 5px;
+    margin: 0 10px;
+}
+.border {
+    border: 1px solid black;
+}
