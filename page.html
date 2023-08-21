@@ -2,46 +2,74 @@
 <html lang="ru">
 
 <head>
-    <title>Сайт начинающего верстальщика</title>
+    <title>Домашние животные</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="fixed-container">
         <header class="row row-menu">
-            <p class="logo">Логотип</p>
-            <nav class="main-menu">
-                <a href="" class="menu-link">Главная</a>
-                <a href="" class="menu-link">Новости</a>
-                <a href="" class="menu-link">О нас</a>
-                <a href="" class="menu-link">Контакты</a>
+            <p class="logo"><img src="data:image/png;base64,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" alt="лапка" width="70" height="70"></p>
+            <nav>
+                <ul class="topmenu">
+                  <li><a href="">Главная</a></li>
+                  <li><a href="">Собаки</a></li>
+                  <li><a href="">Кошки</a></li>
+                  <li><a href="">Другие животные</a></li>
+                </ul>
             </nav>
         </header>
+
         <main class="row">
             <article class="border">
-                <h1 class="main-title"> День первый. Как я забыл покормить кота</h1>
+                <h1 class="main-title">Пудель</h1>
+                <p class="fig"> <img src="https://lapkins.ru/upload/iblock/46c/46c48d510e99fd27d2b9d92eced1dfa4.jpg" alt="Пудель" width="250" height="250"> </p>
                 <p>
-                    Кто бы мог подумать, что семантика это так важно, мне срочно нужно было об этом поговорить.
+                    <u><b>Пудель</b></u> – элегантная и миловидная собака, славящаяся своей необычной кудрявой шерстью. Представители этой породы обладают живым характером, веселым нравом и очень смышленые.
                 </p>
-                <p>
-                    Взгляд упал на кота. Кот издал настойчивое «Мяу». И я понял — пришло время для первой записи в блог.
-                    И
-                    покормить кота.
-                </p>
-                <div>
-                    <div>Блок 1</div>
-                    <div>Блок 2</div>
-                    <div>Блок 3</div>
-                </div>
+
+                <h3>Содержание</h3>
+                <ol>
+                    <li><a href="">Краткая информация</a></li>
+                    <li><a href="">Основные моменты</a></li>
+                    <li><a href="">Заключение</a></li>
+                </ol>
+
+                <h4>Краткая информация</h4>
+                    <ul>
+                        <li> <b>Название породы:</b> Пудель</li>
+                        <li> <b>Страна происхождения:</b> Франция</li>
+                        <li> <b>Вес:</b> большой 20 – 30 кг, малый 8 – 14 кг, карликовый 6 – 8 кг, той ~2,5 кг</li>
+                        <li> <b>Рост (высота в холке):</b> большой 45 – 60 см, малый 35 – 45 см, карликовый 28 – 35 см, той 24 – 28 см</li>
+                        <li> <b>Продолжительность жизни:</b> 12 – 15 лет</li>
+                    </ul>
+                    
+                <h4>Основные моменты</h4>
+                        <li>Пудель – одна из самых добрых и послушных собак.</li>
+                        <li>Обладает незаурядным умом, выдающимся обонянием, слухом и зрением. Больших и малых собак можно использовать на охоте, в сыскной службе, поиске трюфелей.</li>
+                        <li>Пудель очень любит воду и готов резвиться в ней бесконечно.</li>
+                        <li>Активен, способен выдерживать большие физические нагрузки. В городских условиях нуждается в длительных прогулках.</li>
+                        <li>Все пудели, даже их самые мелкие разновидности, отличаются неприхотливостью, обладают хорошим здоровьем и имеют статус долгожителей.</li>
+                        <li>Собаки абсолютно не агрессивны, напротив, наделены особой доброжелательностью к людям.</li>
+                        <li>Превосходные компаньоны, но плохие сторожа.</li>
+                        <li>Представители породы отлично ладят с детьми, становясь для них другом и партнером в играх.</li>
+                        <li>Пудели обладают густой пружинистой шерстью, универсальной для создания разнообразных причесок. Нуждаются в регулярном расчесывании и стрижке.</li>
+
+                        <h4>Заключение</h4>
+                        <p>
+                            <u><b>Пудель</b></u>– воплощение красоты и экстравагантной декоративности, сочетающихся с гармоничным сложением этой собаки, ее великолепным темпераментом, высоким интеллектом. Восхитительная внешность пуделя искрится артистичностью, шармом и экспрессией, а его доброта и жизнелюбие не знают границ. Эти замечательные собаки отличаются невероятной преданностью, которая распространяется на всех членов семьи, при этом пудели очень чувствительны к человеческому вниманию. Они веселые, озорные, любят дурачиться и всегда готовы принять участие в играх и забавах.
+                        </p>
             </article>
+
             <aside class="row row-column border">
                 <div class="border banner">Реклама 1</div>
-
                 <div class="border banner">Реклама 2</div>
+                <div class="border banner">Реклама 3</div>
             </aside>
         </main>
-        <footer class="border">
-            Подвал сайта
+
+        <footer class="border2" id="footer">
+            Более подробную информацию Вы можете узнать <a href="https://lapkins.ru/dog/pudel/" target="_blank">здесь</a>
         </footer>
     </div>
 
